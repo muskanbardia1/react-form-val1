@@ -17,7 +17,7 @@ export default function validateInfo(values){
 
     if(!values.password2){
         errors.password2 = "password is required!";
-    }else if(values.password2.value !== values.password.value){
+    }else if(values.password2 !== values.password){
         errors.password2 = "password do not match!"
     }
 
